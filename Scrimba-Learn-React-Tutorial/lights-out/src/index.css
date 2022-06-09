@@ -4,7 +4,7 @@
 
 .main--playArea {
   width: 300px;
-  height: 300px;
+  height: 348px;
   border: 1px solid darkgray;
   margin: auto;
   padding: 14px;
@@ -19,4 +19,17 @@
   display: inline-block;
   margin-right: 4px;
   border-radius: 5px;
+}
+
+.lato {
+  font-family: "Lato";
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.main--button {
+  /* text-align: center; */
+  margin: 0 auto;
 }

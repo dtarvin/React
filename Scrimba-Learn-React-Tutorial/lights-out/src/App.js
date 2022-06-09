@@ -1,6 +1,7 @@
 import React from "react"
 import boxes from "./boxes"
 import Box from "./Box"
+import Header from "./Header"
 
 export default function App() {
     const [squares, setSquares] = React.useState(boxes)
@@ -51,21 +52,23 @@ export default function App() {
     
     const squareElements = squares.map(square => (
         <Box 
-            key={square.id} 
-            id={square.id}
-            row={square.row}
-            column={square.column}
-            on={square.on} 
-            toggle={toggle}
+              key={square.id} 
+              id={square.id}
+              row={square.row}
+              column={square.column}
+              on={square.on} 
+              toggle={toggle}
         />
     ))
     
     return (
-        <>
+        <>  
+            
             <main className="main--playArea">
+                <h1 className="lato">LIGHTS OUT</h1>
                 {squareElements}
+                <button className="main--button" onClick={randomize}>Randomize</button>
             </main>
-            <button onClick={randomize}>Randomize</button>
         </>
     )
 }
