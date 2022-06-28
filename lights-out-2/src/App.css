@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+.main--playArea {
+  width: 300px;
+  height: 348px;
+  border: 1px solid darkgray;
+  margin: auto;
+  padding: 14px;
+  border-radius: 10px;
+  background-image: linear-gradient(to right bottom, #a22de0, #bd73e6);
+}

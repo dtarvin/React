@@ -1,9 +1,9 @@
 import React from "react"
 import boxes from "./boxes"
 import Box from "./Box"
-import Header from "./Header"
+import "./Box.css"
 
-export default function App() {
+export default function Playboard() {
     const [squares, setSquares] = React.useState(boxes)
     
     function randomize() {
@@ -62,13 +62,9 @@ export default function App() {
     ))
     
     return (
-        <>  
-            
-            <main className="main--playArea">
-                <h1 className="lato">LIGHTS OUT</h1>
-                {squareElements}
-                <button className="main--button" onClick={randomize}>Randomize</button>
-            </main>
-        </>
+        <div>  
+            {squareElements}
+            <button className="main--button" onClick={randomize}>Randomize</button>
+        </div>
     )
 }

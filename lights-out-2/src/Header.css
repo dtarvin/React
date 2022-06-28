@@ -1,0 +1,26 @@
+.lato {
+    position: relative;
+}
+
+.lato>span {
+    position: relative;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: center;
+    font-style: italic;
+    background: linear-gradient(#262626, #eaeaea, #262626);
+    background-clip: text;
+    color: transparent;
+}
+
+.lato>span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.lato>span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
